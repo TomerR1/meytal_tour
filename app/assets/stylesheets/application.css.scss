@@ -14,21 +14,3 @@
  *= require_self
  */
  
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('OpenSansLight'), local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-}
-
-body {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    cursor: default;
-}
