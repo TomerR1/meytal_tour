@@ -16,6 +16,8 @@
  
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 @font-face {
   font-family: 'Open Sans';
@@ -28,4 +30,5 @@ body {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
+    cursor: default;
 }
