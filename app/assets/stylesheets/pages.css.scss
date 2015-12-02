@@ -2,8 +2,39 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.vimeo-wrapper iframe {
+    height:354px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .vimeo-wrapper iframe {
+        height:279px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .vimeo-wrapper iframe {
+        height:196px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     nav.navbar a {
       text-align: center;
+    }
+    .vimeo-wrapper iframe {
+        height:354px;
+    }
+}
+
+@media only screen and (max-width: 571px) {
+    .vimeo-wrapper iframe {
+        height:254px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .vimeo-wrapper iframe {
+        height:166px;
     }
 }
