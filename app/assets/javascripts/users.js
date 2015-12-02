@@ -4,6 +4,7 @@ $(document).ready(function() {
   $("#form-submit-btn").click(function(event) {
     event.preventDefault();
     $('input[type=submit]').prop('disabled', true);
+    $('#err').html('');
     var error = false;
     var ccNum = $('#card_number').val(),
         cvcNum = $('#card_code').val(),
@@ -24,7 +25,8 @@ $(document).ready(function() {
     // Get a reference to the form:
     var f = $("#new_user");
     if (response.error) {
-      
+      $('#err').html('<div class="alert alert-notice">Credit card error, please try again.</div>');
+      $('input[type=submit]').prop('disabled', false);
     } else {
       // Get the token from the response:
       var token = response.id;
