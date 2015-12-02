@@ -1,1 +1,12 @@
-<h1>Tour</h1>
+<div class="col-md-4 col-md-offset-4" style="text-align:center;"><h1>Tour</h1></div>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+ <% if current_user %>
+    <h2>You are signed in. Blog goes here</h2>
+ <% else %>
+    <h2>You are not logged in. Please log in or sign up blah blah</h2>
+ <% end %>
+        </div>
+    </div>
+</div>
