@@ -20,6 +20,7 @@
         <% end %>
         <% if current_user %>
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn navbar-btn home-btn floatright' %>
+          <%= link_to "Tour", tour_path, class: 'btn btn-primary navbar-btn floatright' %>
         <% else %>
           <%= link_to "Log In", new_user_session_path, class: 'btn navbar-btn home-btn floatright', method: :get %>
         <% end %>
