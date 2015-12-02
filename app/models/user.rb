@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
     if valid?
       customer = Stripe::Customer.create(
         :source => stripe_card_token,
-        :description => "Example customer"
+        :description => email
       )
       self.stripe_customer_token = customer.id
       save!
