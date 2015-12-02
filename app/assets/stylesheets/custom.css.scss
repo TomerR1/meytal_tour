@@ -23,7 +23,8 @@ body {
 
 .signup-btn {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 59px;
+    margin-bottom: 12px;
 }
 
 .signup-btn a {
@@ -72,11 +73,45 @@ body {
     .vimeo-wrapper iframe {
         height:279px;
     }
+    .jumbotron h1 {
+        font-size:45px!important;
+        margin: 0px;
+    }
+    .jumbotron h3 {
+        font-size:23px!important;
+        margin: 0px;
+    }
+    .jumbotron h5 {
+        font-size:13px!important;
+        margin: 0px;
+    }
+    .signup-btn a {
+        font-size:15px;
+    }
+    .signup-btn {
+        margin-top: 69px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
     .vimeo-wrapper iframe {
         height:196px;
+    }
+    .jumbotron h1 {
+        font-size:35px!important;
+        margin: 0px;
+    }
+    .jumbotron h3 {
+        font-size:16px!important;
+        margin: 0px;
+    }
+    .jumbotron h5 {
+        font-size:10px!important;
+        margin: 0px;
+    }
+    .signup-btn a {
+        font-size:12px;
+        padding: 12px 4px !important;
     }
 }
 
@@ -89,6 +124,28 @@ body {
     }
     .home-btn {
         margin-left: 25px!important;
+    }
+    .jumbotron h1 {
+        font-size:63px!important;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .jumbotron h3 {
+        font-size:24px!important;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .jumbotron h5 {
+        font-size:14px!important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .col-sm-4 {
+        margin: 20px;
+    }
+    .signup-btn a {
+        font-size: 16px;
+        padding: 16px 30px !important;
     }
 }
 
