@@ -12,7 +12,17 @@ class User < ActiveRecord::Base
         :description => email
       )
       self.stripe_customer_token = customer.id
-      save!
+      begin
+        charge = Stripe::Charge.create(
+          :amount => 1000,
+          :currency => "usd",
+          :customer => customer.id,
+          :description => "Example charge"
+        )
+        save!
+      rescue Stripe::CardError => e
+        # The card has been declined
+      end
     end
   end
 end
