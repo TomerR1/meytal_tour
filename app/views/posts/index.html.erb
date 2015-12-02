@@ -1,5 +1,9 @@
 <h1 style="text-align:center;">Index</h1><br>
 
-<% for i in (Dir[("#{Rails.root}/app/views/posts/post/*")].length).downto(1) %>
-    <%= render :file => "#{Rails.root}/app/views/posts/post/_post" + i.to_s + ".html.erb" %>
+<% if current_user %>
+    <% for i in (Dir[("#{Rails.root}/app/views/posts/post/*")].length).downto(1) %>
+        <%= render :file => "#{Rails.root}/app/views/posts/post/_post" + i.to_s + ".html.erb" %>
+    <% end %>
+<% else %>
+    <h2>You are not logged in. Please log in or sign up blah blah</h2>
 <% end %>
