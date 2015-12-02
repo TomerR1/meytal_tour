@@ -8,18 +8,17 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-static-top custom-nav" role="navigation">
   <div class='container'>
-    <div class="nav navbar-nav navbar-left">
-      <li>
-        <%= link_to 'Meytal - Behind The Tour', root_path %>
-      </li>
-    </div>
-    <div class="nav navbar-nav navbar-right">
-
-        <li><%= link_to "About", "#" %></li>
-
-    </div><!-- /.navbar-collapse -->
+      <div class="navbar-header" style="width:100%;">
+            <%= link_to "Home", root_path, method: :get, class: 'btn navbar-btn home-btn' %>
+        <% if current_user %>
+          <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn floatright' %>
+        <% else %>
+          <%= link_to "Log In", new_user_session_path, class: 'btn btn-primary navbar-btn floatright', method: :get %>
+          <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success navbar-btn floatright', method: :get %>
+        <% end %>
+      </div>
   </div>
 </nav>
 

@@ -16,3 +16,90 @@ body {
     font-weight: 300;
     cursor: default;
 }
+
+.vimeo-wrapper iframe {
+    height:354px;
+}
+
+.signup-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.signup-btn a {
+    background: #4581B5 none repeat scroll 0% 0% !important;
+    color: #FFF !important;
+    font-size: 16px;
+    padding: 16px 30px !important;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out 0s;
+    text-decoration: none;
+}
+
+.signup-btn a:hover {
+    opacity: 0.8;
+}
+
+.floatright {
+    float: right;
+}
+
+.navbar-btn {
+    margin: 8px;
+}
+
+.custom-nav {
+    background: none;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.home-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    transition: opacity 0.1s ease-in-out 0s;
+}
+
+.home-btn:hover {
+    background: #fff;
+    color: #000;
+    border: none;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 1199px) {
+    .vimeo-wrapper iframe {
+        height:279px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .vimeo-wrapper iframe {
+        height:196px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    nav.navbar a {
+      text-align: center;
+    }
+    .vimeo-wrapper iframe {
+        height:354px;
+    }
+    .home-btn {
+        margin-left: 25px!important;
+    }
+}
+
+@media only screen and (max-width: 571px) {
+    .vimeo-wrapper iframe {
+        height:254px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .vimeo-wrapper iframe {
+        height:166px;
+    }
+}
