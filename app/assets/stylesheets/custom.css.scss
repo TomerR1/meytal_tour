@@ -68,6 +68,28 @@ body {
     opacity: 0.8;
 }
 
+.social-share {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.social-share a {
+    border: 1px solid #ECECEC;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px;
+    text-decoration: none;
+    transition: opacity 0.1s ease-in-out 0s;
+}
+
+.social-share a:hover {
+    opacity: 0.8;
+}
+
 @media only screen and (max-width: 1199px) {
     .vimeo-wrapper iframe {
         height:279px;
@@ -89,6 +111,9 @@ body {
     }
     .signup-btn {
         margin-top: 69px;
+    }
+    .social-share a {
+        margin: 10px;
     }
 }
 
@@ -121,6 +146,9 @@ body {
     .signup-btn a {
         font-size: 16px;
         padding: 16px 30px !important;
+    }
+    .social-share a {
+        margin: 20px;
     }
 }
 

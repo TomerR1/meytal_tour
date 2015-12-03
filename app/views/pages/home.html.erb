@@ -17,6 +17,18 @@
                     <div class="signup-btn"><%= link_to "Get Full Access", new_user_registration_path, method: :get %></div>
                 </div>
             </div>
+            <div class="container">
+                <div class="well social-share">
+                    <%= link_to "//www.facebook.com/sharer.php?u=" + root_url, target: "_blank", class: 'share-facebook' do %>
+                        <span class="fa fa-facebook"></span>
+                        <span class="share-title">Share</span>
+                    <% end %>
+                    <%= link_to "//twitter.com/share?text=Meytal - Behind The Tour&amp;url=" + root_url, target: "_blank", class: 'share-twitter' do %>
+                        <span class="fa fa-twitter"></span>
+                        <span class="share-title">Tweet</span>
+                    <% end %>
+                </div>
+            </div>
         </div>
     </div>
 </div>
