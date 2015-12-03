@@ -22,7 +22,6 @@
         <% end %>
         <% if current_user %>
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn navbar-btn home-btn floatright' %>
-          <%= link_to "Tour", tour_path, class: 'btn navbar-btn floatright' %>
           <%= link_to "Blog", posts_path, class: 'btn btn-primary navbar-btn floatright' %>
         <% else %>
           <%= link_to "Log In", new_user_session_path, class: 'btn navbar-btn home-btn floatright', method: :get %>
@@ -37,6 +36,20 @@
   <% end %>
   <%= yield %>
 </div>
+
+<footer>
+  <div class="container">
+        <div class="col-md-12">
+          <div id="partners">
+            <img src="http://i.imgur.com/hIpO5m0.png"><img src="http://i.imgur.com/yy3mRZ7.png"><img src="http://i.imgur.com/UtEnQmw.png"><img src="http://i.imgur.com/rl0LdKt.png"><img src="http://i.imgur.com/RgzntEf.png"><img src="http://i.imgur.com/Wp9NKxM.png">
+          </div>
+          <p class="copyright">
+            © 2015 <a href="/" title="">Meytal - Behind The Tour</a>.
+           All rights reserved 
+          </p>
+        </div>
+  </div>
+</footer>
 
 </body>
 </html>

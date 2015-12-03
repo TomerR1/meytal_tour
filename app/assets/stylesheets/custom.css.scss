@@ -90,6 +90,38 @@ body {
     opacity: 0.8;
 }
 
+#partners {
+    clear: both;
+    padding: 15px 0px 0px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 11px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.img-bg {
+    position: relative;
+}
+
+.img-bg img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    margin-top: 10px;
+}
+
+.btn {
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.btn:hover {
+    transition: all 0.1s ease-in-out 0s;
+}
+
 @media only screen and (max-width: 1199px) {
     .vimeo-wrapper iframe {
         height:279px;
@@ -114,6 +146,10 @@ body {
     }
     .social-share a {
         margin: 10px;
+    }
+    .img-bg img {
+        width: 39px;
+        margin-top: 0px;
     }
 }
 
@@ -149,6 +185,10 @@ body {
     }
     .social-share a {
         margin: 20px;
+    }
+    .img-bg img {
+        width: 60px;
+        margin-top: 10px;
     }
 }
 
