@@ -24,7 +24,7 @@
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn navbar-btn home-btn floatright' %>
           <%= link_to "Blog", posts_path, class: 'btn btn-primary navbar-btn floatright' %>
         <% else %>
-          <%= link_to "Log In", new_user_session_path, class: 'btn navbar-btn home-btn floatright', method: :get %>
+          <%= link_to "Log In", new_user_session_path, class: 'btn navbar-btn home-btn floatright' %>
         <% end %>
       </div>
   </div>
